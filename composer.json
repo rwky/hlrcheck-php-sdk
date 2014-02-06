@@ -1,0 +1,27 @@
+{
+    "name": "3gtelecoms/hlrcheck",
+    "type": "library",
+    "description": "SDK for hlrcheck.com",
+    "keywords": ["hlr","hlrcheck"],
+    "homepage": "http://s2.hlrcheck.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rowan Wookey",
+            "email": "admin@rwky.net",
+            "homepage": "http://www.rwky.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"  
+    },
+    "autoload": {
+        "psr-4": { "hlrcheck\\" : "src/" }
+    }
+}
