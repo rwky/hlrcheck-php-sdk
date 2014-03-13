@@ -8,8 +8,7 @@ class API {
     protected $_endpoint;
     
     protected function _url($uri,$data){
-        $hash = urlencode(base64_encode(hash_hmac('sha1',$data.$uri,$this->_secret,true)));
-        return $this->_endpoint.$uri."?key={$this->_key}&hash=$hash";
+        return $this->_endpoint.$uri."?key={$this->_key}&secret={$this->_secret}";
     }
     
     protected function _curl($uri,$data){
