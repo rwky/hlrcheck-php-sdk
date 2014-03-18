@@ -114,7 +114,7 @@ class API {
      */
     
     public function process($id) {
-        return $this->_call('/api/bulk/process/'.$id);
+        return $this->_call('/api/bulk/process/'.$id,'dummy=1');
     }
     
     public function check($msisdns,$type,$cachepersonaldays,$cacheshareddays,$cachesharedsave=1,$url=''){
